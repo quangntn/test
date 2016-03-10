@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows -->
+<html lang="vi" prefix="og: http://ogp.me/ns#" itemscope="" itemtype="http://schema.org/Article" class="rich-testimonials-fouc"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Hướng dẫn sử dụng github trên windows_files/"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="Hướng dẫn sử dụng github trên windows">
+<meta property="og:description" content="Github là gì? Dân lập trình có vẻ khá thân thuộc nhưng những ai không quan tâm đến nó cũng không biết nó là gì đâu, nó cũng giống như SVN là một source version control. Github còn được gọi là Code social network dành cho developer đi vào hoạt độ…">
+<meta property="og:url" content="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/github.jpg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="THIẾT KẾ WEB GIÁ RẺ - CHUẨN SEO - UY TÍN TẠI HÀ NỘI">
+<meta property="article:tag" content="github">
+<meta property="article:section" content="Github">
+<meta property="article:published_time" content="2014-08-19T22:27:55+00:00">
+<meta property="article:modified_time" content="2014-08-21T14:13:00+00:00">
+<meta property="og:updated_time" content="2014-08-21T14:13:00+00:00">
+<link rel="author" href="https://plus.google.com/+Hoangwebltd">
+<link rel="publisher" href="https://plus.google.com/b/110505423275500182433">
+<meta itemprop="name" content="Hướng dẫn sử dụng github trên windows">
+<meta itemprop="description" content="Github là gì? Dân lập trình có vẻ khá thân thuộc nhưng những ai không quan tâm đến nó cũng không biết nó là gì đâu, nó cũng giống như SVN là một source version control. Github còn được gọi là Code social network dành cho developer đi vào hoạt độ…">
+<meta itemprop="image" content="http://img.hoangweb.com/2014/08/github.jpg">
+
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Hướng dẫn sử dụng github trên windows</title>
+<link rel="canonical" href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows">
+<link rel="publisher" href="https://plus.google.com/+hoangquachhoangweb/about">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hướng dẫn sử dụng github trên windows">
+<meta property="og:description" content="Nội dung1 Thiết kế website WordPress1.1 Cách thức làm việc với github1.2 Thuật ngữ2 Sử dụng Git với giao diện2.1 Thiết lập SSH Keys2.2 Cài đặt SSH Key trên Hosted Git Repository2.3 Làm việc với Git2.4 Tạo Local Repository2.5 Khóa học thiết kế web Wordpress2.6 Sử dụng Git GUI Client2.7 Hướng dẫn Commit2.8 Bắt đầu …">
+<meta property="og:url" content="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows">
+<meta property="og:site_name" content="THIẾT KẾ WEB GIÁ RẺ - CHUẨN SEO - UY TÍN TẠI HÀ NỘI">
+<meta property="article:publisher" content="https://www.facebook.com/dayhocthietkeweb">
+<meta property="article:author" content="https://www.facebook.com/dayhocthietkeweb">
+<meta property="article:tag" content="github">
+<meta property="article:section" content="Github">
+<meta property="article:published_time" content="2014-08-19T22:27:55+00:00">
+<meta property="article:modified_time" content="2014-08-21T14:13:00+00:00">
+<meta property="og:updated_time" content="2014-08-21T14:13:00+00:00">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/github.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/git-commit-comment.png">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/gui-ssh1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/ssh-key.png">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/ssh-keys1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/git-gui1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/create-repo1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/git-gui-stage1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/git-gui-stage-changes1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/git-gui-commit1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/add-remote-origin1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/push-21.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/push1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/push-passphrase1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/push-complete1.jpg">
+<meta property="og:image" content="http://img.hoangweb.com/2014/08/clone-repo1.jpg">
+<meta property="DC.date.issued" content="2014-08-19T22:27:55+00:00">
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin THIẾT KẾ WEB GIÁ RẺ - CHUẨN SEO - UY TÍN TẠI HÀ NỘI »" href="http://www.hoangweb.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi THIẾT KẾ WEB GIÁ RẺ - CHUẨN SEO - UY TÍN TẠI HÀ NỘI »" href="http://www.hoangweb.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="THIẾT KẾ WEB GIÁ RẺ - CHUẨN SEO - UY TÍN TẠI HÀ NỘI » Hướng dẫn sử dụng github trên windows Dòng phản hồi" href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows/feed/">
+		<script type="text/javascript" async="" src="./Hướng dẫn sử dụng github trên windows_files/essb-mobile.min.js"></script><script type="text/javascript" async="" src="./Hướng dẫn sử dụng github trên windows_files/easy-social-share-buttons.min.js"></script><script type="text/javascript" async="" src="./Hướng dẫn sử dụng github trên windows_files/cse.js"></script><script type="text/javascript" async="" src="./Hướng dẫn sử dụng github trên windows_files/loader.js"></script><script id="facebook-jssdk" src="./Hướng dẫn sử dụng github trên windows_files/sdk.js"></script><script async="" src="./Hướng dẫn sử dụng github trên windows_files/analytics.js"></script><script src="./Hướng dẫn sử dụng github trên windows_files/cb=gapi.loaded_1" async=""></script><script src="./Hướng dẫn sử dụng github trên windows_files/cb=gapi.loaded_0" async=""></script><script async="" src="./Hướng dẫn sử dụng github trên windows_files/fbds.js"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.hoangweb.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Hướng dẫn sử dụng github trên windows_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="education-pro-theme-css" href="./Hướng dẫn sử dụng github trên windows_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Hướng dẫn sử dụng github trên windows_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elusive-css" href="./Hướng dẫn sử dụng github trên windows_files/elusive.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fa-css" href="./Hướng dẫn sử dụng github trên windows_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="foundation-icons-css" href="./Hướng dẫn sử dụng github trên windows_files/foundation-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="genericon-css" href="./Hướng dẫn sử dụng github trên windows_files/genericons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="menu-icons-extra-css" href="./Hướng dẫn sử dụng github trên windows_files/extra.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cptch_desktop_style-css" href="./Hướng dẫn sử dụng github trên windows_files/desktop_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="css3_grid_font_yanone-css" href="./Hướng dẫn sử dụng github trên windows_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="css3_grid_table1_style-css" href="./Hướng dẫn sử dụng github trên windows_files/css3_grid_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="css3_grid_table2_style-css" href="./Hướng dẫn sử dụng github trên windows_files/css3_grid_style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="css3_grid_responsive-css" href="./Hướng dẫn sử dụng github trên windows_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="toc-screen-css" href="./Hướng dẫn sử dụng github trên windows_files/screen.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-css" href="./Hướng dẫn sử dụng github trên windows_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="vietcodex.css-css" href="./Hướng dẫn sử dụng github trên windows_files/vietcodex.css" type="text/css" media="all">
+<link rel="stylesheet" id="easy-social-share-buttons-css" href="./Hướng dẫn sử dụng github trên windows_files/easy-social-share-buttons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="easy-social-share-buttons-mobile-css" href="./Hướng dẫn sử dụng github trên windows_files/essb-mobile.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="essb-cct-style-css" href="./Hướng dẫn sử dụng github trên windows_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpgeshi-wp-geshi-highlight-css" href="./Hướng dẫn sử dụng github trên windows_files/wp-geshi-highlight.css" type="text/css" media="all">
+<link rel="stylesheet" id="footable-core-min-css" href="./Hướng dẫn sử dụng github trên windows_files/footable.core.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="footable-standalone-min-css" href="./Hướng dẫn sử dụng github trên windows_files/footable.standalone.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var __hw_localize_object = {"address":null};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/hw-scripts.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var cptch_vars = {"nonce":"fa3455e648","ajaxurl":"http:\/\/www.hoangweb.com\/wp-admin\/admin-ajax.php","enlarge":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/front_end_script.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/responsive-menu.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/myjs.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery-ui-1.11.0.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.sticky.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.sticky-kit.min.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.vietcodex.track-content-tabs-scroll.min.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.marquee.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var __hwcpl_object = {"ajax_url":"http:\/\/www.hoangweb.com\/wp-admin\/admin-ajax.php","home_url":"http:\/\/www.hoangweb.com","images_url":"http:\/\/www.hoangweb.com\/wp-content\/plugins\/hw-taxonomy-post-list-widgetimages","query_type":["current_context","filter_query"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/js.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/footable.min.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/footable.sort.min.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/footable.paginate.min.js"></script>
+<link rel="https://api.w.org/" href="http://www.hoangweb.com/wp-json/">
+<link rel="alternate" type="application/json+oembed" href="http://www.hoangweb.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hoangweb.com%2Fgithub%2Fhuong-dan-su-dung-github-tren-windows">
+<link rel="alternate" type="text/xml+oembed" href="http://www.hoangweb.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hoangweb.com%2Fgithub%2Fhuong-dan-su-dung-github-tren-windows&amp;format=xml">
+<style type="text/css"> .enews .screenread {
+	height: 1px;
+    left: -1000em;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    width: 1px; } </style><style type="text/css">div#toc_container ul li {font-size: 100%;}</style><link rel="Shortcut Icon" href="http://www.hoangweb.com/wp-content/themes/education-pro/images/favicon.ico" type="image/x-icon">
+<meta name="google-site-verification" content="w2xjuS0BEMl78j3rU_R5mp9CGTOXfVVZhLPx4Ik4z5Q">
+<script type="text/javascript">
+function Set_Cookie(name, value, expires, path, domain, secure) {
+var today = new Date();
+today.setTime(today.getTime());
+var expires_date = new Date(today.getTime() + (expires));
+
+document.cookie = name + "=" + escape(value) +
+((expires) ? ";expires=" + expires_date.toGMTString() : "") +
+((path) ? ";path=" + path : "") +
+((domain) ? ";domain=" + domain : "") +
+((secure) ? ";secure" : "");
+}
+
+function Get_Cookie(name) {
+
+var start = document.cookie.indexOf(name + "=");
+var len = start + name.length + 1;
+if ((!start) &&
+(name != document.cookie.substring(0, name.length))) {
+return null;
+}
+if (start == -1) return null;
+var end = document.cookie.indexOf(";", len);
+if (end == -1) end = document.cookie.length;
+return unescape(document.cookie.substring(len, end));
+}
+
+function Delete_Cookie(name, path, domain) {
+if (Get_Cookie(name)) document.cookie = name + "=" +
+((path) ? ";path=" + path : "") +
+((domain) ? ";domain=" + domain : "") +
+";expires=Mon, 11-November-1989 00:00:01 GMT";
+}
+
+function popunder() {
+
+if (Get_Cookie('cucre') == null) {
+Set_Cookie('cucre', 'cucre Popunder', '1', '/', '', '');
+var url = "http://www.hoangweb.com/thiet-ke-web-gia-re/";
+pop = window.open(url, 'windowcucre');
+pop.blur();
+
+window.focus();
+}
+
+}
+
+function addEvent(obj, eventName, func) {
+if (obj.attachEvent) {
+obj.attachEvent("on" + eventName, func);
+}
+else if (obj.addEventListener) {
+obj.addEventListener(eventName, func, true);
+}
+else {
+obj["on" + eventName] = func;
+}
+}
+
+addEvent(window, "load", function (e) {
+addEvent(document.body, "click", function (e) {
+popunder();
+});
+});
+</script>
+
+<!-- Facebook Conversion Code for Lượt xem -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6035209930252', {'value':'1.00','currency':'VND'}]);
+</script>
+<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6035209930252&amp;amp;cd[value]=1.00&amp;amp;cd[currency]=VND&amp;amp;noscript=1" /&gt;</noscript><style type="text/css">.site-title a { background: url(http://img.hoangweb.com/2015/07/hoangedu.png) no-repeat !important; }</style>
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<script>
+	jQuery(document).ready(function(){
+jQuery('a img').each(function(){
+   $(this).parent().css({'border':'0'});
+});		
+	});
+</script>
+	<style type="text/css">.essb-mobile-sharebar, .essb-mobile-sharepoint, .essb-mobile-sharebottom { display: none; } .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after, .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after { color: #777777;content: "Chia sẻ";display: block;font-size: 11px;font-weight: normal;text-align: center;text-transform: uppercase;margin-top: -5px; } .essb_links_list li.essb_totalcount_item .essb_t_l_big, .essb_links_list li.essb_totalcount_item .essb_t_r_big { text-align: center; } .essb_displayed_sidebar .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after, .essb_displayed_sidebar .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after { margin-top: 0px; } .essb_displayed_sidebar_right .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after, .essb_displayed_sidebar_right .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after { margin-top: 0px; } .essb_totalcount_item_before, .essb_totalcount_item_after { display: block !important; } .essb_totalcount_item_before .essb_totalcount, .essb_totalcount_item_after .essb_totalcount { border: 0px !important; } .essb_counter_insidebeforename { margin-right: 5px; font-weight: bold; } .essb_width_columns_1 li { width: 100%; } .essb_width_columns_1 li a { width: 92%; } .essb_width_columns_2 li { width: 49%; } .essb_width_columns_2 li a { width: 86%; } .essb_width_columns_3 li { width: 32%; } .essb_width_columns_3 li a { width: 80%; } .essb_width_columns_4 li { width: 24%; } .essb_width_columns_4 li a { width: 70%; } .essb_width_columns_5 li { width: 19.5%; } .essb_width_columns_5 li a { width: 60%; } .essb_links li.essb_totalcount_item_before, .essb_width_columns_1 li.essb_totalcount_item_after { width: 100%; text-align: left; } .essb_network_align_center a { text-align: center; } .essb_network_align_right .essb_network_name { float: right;} .essb_displayed_sidebar_right, .essb_displayed_sidebar { top: 15% !important;} .essb_topbar .essb_topbar_inner { max-width: 1000px; margin: 0 auto; padding-left: 0px; padding-right: 0px;} .essb_topbar { height: 69px; } .essb_topbar .essb_topbar_inner_buttons { width: 65%; } .essb_topbar .essb_topbar_inner_content { width: 35%; } .essb_topbar { margin-top: -200px; } .essb_bottombar .essb_bottombar_inner { max-width: 1000px; margin: 0 auto; padding-left: 0px; padding-right: 0px;} .essb_bottombar { height: 70px; } .essb_bottombar .essb_bottombar_inner_buttons { width: 65%; } .essb_bottombar .essb_bottombar_inner_content { width: 35%; } .essb_fixed { left: 0; width: 100%; min-width: 100%; padding-left: 10px; } .essb_fixed.essb_links ul { max-width: 1000px; margin: 0 auto !important; } .essb_fixed { padding-left: 0px; } .essb-mobile-sharebottom .essb_links { margin: 0px !important; } .essb-mobile-sharebottom .essb_width_columns_2 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_3 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_4 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_5 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_6 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_links { margin: 0px !important; } .essb-mobile-sharebottom .essb_width_columns_2 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_3 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_4 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_5 li a { width: 100% !important; } .essb-mobile-sharebottom .essb_width_columns_6 li a { width: 100% !important; }</style>
+<script type="text/javascript">var essb_settings = {"ajax_url":"http:\/\/www.hoangweb.com\/wp-admin\/admin-ajax.php","essb3_nonce":"9942cbf846","essb3_plugin_url":"http:\/\/www.hoangweb.com\/wp-content\/plugins\/easy-social-share-buttons3","essb3_facebook_total":true,"essb3_admin_ajax":true,"essb3_internal_counter":true,"essb3_stats":false,"essb3_ga":false,"essb3_ga_mode":"simple","essb3_counter_button_min":0,"essb3_counter_total_min":0,"blog_url":"http:\/\/www.hoangweb.com\/","ajax_type":"wp","essb3_postfloat_stay":false,"essb3_no_counter_mailprint":false,"essb3_single_ajax":true,"twitter_counter":"api","post_id":2179,"hide_float":"80"};</script><script type="text/javascript">/* FooTable init code */
+
+var $FOOTABLE = $FOOTABLE || {};
+(function( $FOOTABLE, $, undefined ) {
+
+	jQuery.fn.attrAppendWithComma=function(a,b){var c;return this.each(function(){c=$(this),void 0!==c.attr(a)&&""!=c.attr(a)?c.attr(a,c.attr(a)+","+b):c.attr(a,b)})};jQuery.fn.footableAttr=function(a,b){return this.each(function(){var c=$(this);c.data("auto-columns")!==!1&&(c.find("thead th:gt("+a+")").attrAppendWithComma("data-hide","tablet"),c.find("thead th:gt("+b+")").attrAppendWithComma("data-hide","phone"))})},jQuery.fn.footableFilter=function(a){return this.each(function(){var b=$(this);b.data("filter")||b.data("filter")===!1||b.data("filter-text-only","true").before('<div class="footable-filter-container"><input placeholder="'+a+'" style="float:right" type="text" class="footable-filter" /></div>')})},jQuery.fn.footablePager=function(){return this.each(function(){var a=$(this);if(a.data("page")!==!1){var b=$('<tfoot class="hide-if-no-paging"><tr><td><div class="pagination pagination-centered"></div></td></tr></tfoot>');b.find("td").attr("colspan",a.find("thead th").length),a.find("tbody:last").after(b)}})};
+
+	$FOOTABLE.init = function() {
+		$(".hoangweb")
+			.footableAttr(3,1)
+			.footablePager()
+			.footable( { breakpoints: { phone: 320, tablet: 768 } });
+
+	};
+}( $FOOTABLE, jQuery ));
+
+jQuery(function($) {
+	$FOOTABLE.init();
+});
+</script><script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"Article","url":"http:\/\/www.hoangweb.com\/github\/huong-dan-su-dung-github-tren-windows","author":{"@type":"Person","name":"Ho\u00e0ng Qu\u00e1ch"},"headline":"H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng github tr\u00ean windows","datePublished":"2014-08-19 22:27:55","image":"http:\/\/img.hoangweb.com\/2014\/08\/github.jpg","ArticleSection":"Github","Publisher":"Ho\u00e0ng Qu\u00e1ch"}</script><script type="application/ld+json">{"@context":"http:\/\/schema.org\/","address":{"@type":"PostalAddress","streetAddress":"S\u1ed1 8 Ng\u00f5 112 T\u00e2y S\u01a1n","addressLocality":"\u0110\u1ed1ng \u0110a","addressRegion":"H\u00e0 N\u1ed9i","postalCode":"1000000","addressCountry":"Vi\u1ec7t Nam"}}</script><script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"Person","name":"Ho\u00e0ng Qu\u00e1ch","email":"laptrinhweb123@gmail.com","telephone":"0966.126.910 - 0944.049.910 - 01663.930.250","image":"http:\/\/1.gravatar.com\/avatar\/184204b04b2d89c838e739f9af87cb81?s=96&d=mm&r=g","jobTitle":"","sameAs":[" https:\/\/twitter.com\/hoangweb","","https:\/\/www.facebook.com\/dayhocthietkeweb","https:\/\/plus.google.com\/+Hoangwebltd","https:\/\/www.linkedin.com\/in\/ho%C3%A0ng-qu%C3%A1ch-ab081966",""]}</script><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.hoangweb.com/?wordfence_logHuman=1&hid=F186C1FF97FF35ADF769D102835AE421');
+</script><style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css">.rt-set2.rich-testimonials{width:100% !important;max-width:1200px;display:block;}.rt-set2 img{max-width:90% !important;}.testimonial_side{width:100% !important;}</style><style type="text/css">#rich-testimonials-recent-nav a.selected{background-position:-16px 0 !important;}.rt-simplist .rt-nav-fillup .inner-nav a { border: 2px solid #cc0202 !important;}.rt-simplist .rt-nav-fillup .inner-nav.selected a:after { background-color: #cc0202 !important; }</style><script src="./Hướng dẫn sử dụng github trên windows_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Hướng dẫn sử dụng github trên windows_files/default+vi.css" rel="stylesheet"><link type="text/css" href="./Hướng dẫn sử dụng github trên windows_files/default.css" rel="stylesheet"><script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/default+vi.I.js"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #EA9999;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #E06666;
+background-color: #FF0000;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #E9E9E9;
+background-color: #E9E9E9;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #FF9900;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #FF9900;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FCE5CD;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #0000CC;
+}
+.gsc-cursor-page {
+color: #0000CC;
+}
+a.gsc-trailing-more-results:link {
+color: #0000CC;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #E9E9E9;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #FF9900;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #336699;
+background-color: #FFFFFF;
+}
+.gsc-completion-title {
+color: #0000CC;
+}
+.gsc-completion-snippet {
+color: #000000;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #0000CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #000000;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #008000;
+}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script type="text/javascript" async="" src="./Hướng dẫn sử dụng github trên windows_files/saved_resource"></script></head>
+<body class="single single-post postid-2179 single-format-standard single-author custom-header header-image content-sidebar" itemscope="" itemtype="http://schema.org/Blog"><div class="site-container"><nav class="nav-primary" itemscope="" itemtype="http://schema.org/SiteNavigationElement"><div class="wrap"><div class="responsive-menu-icon"></div><ul id="menu-seo-top" class="menu genesis-nav-menu menu-primary responsive-menu"><li id="menu-item-6574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6574"><a target="_blank" href="http://www.hoangweb.com/bang-gia-thiet-ke-website-chuyen-nghiep/" itemprop="url"><span itemprop="name">Bảng giá thiết kế web</span></a></li>
+<li id="menu-item-6075" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6075"><a href="http://www.hoangweb.com/dang-ky-ten-mien/" itemprop="url"><span itemprop="name">Đăng ký tên miền</span></a></li>
+<li id="menu-item-6141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6141"><a href="http://www.hoangweb.com/hosting-vps/" itemprop="url"><span itemprop="name">Hosting – VPS</span></a></li>
+<li id="menu-item-6098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6098"><a href="http://www.hoangweb.com/thiet-ke-web-gia-re/" itemprop="url"><span itemprop="name">Thiết kế web giá rẻ</span></a></li>
+<li class="right search"><form class="search-form" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" method="get" action="http://www.hoangweb.com/" role="search"><meta itemprop="target" content="http://www.hoangweb.com/?s={s}"><input itemprop="query-input" type="search" name="s" placeholder="Tìm kiếm..."><input type="submit" value="Tìm"></form></li></ul></div></nav><header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="http://www.hoangweb.com/">THIẾT KẾ WEB GIÁ RẺ - CHUẨN SEO - UY TÍN TẠI HÀ NỘI</a></p><p class="site-description" itemprop="description">CÔNG TY THIẾT KẾ WEB GIÁ RẺ - CHUYÊN NGHIỆP</p></div><div class="widget-area header-widget-area"><section id="nav_menu-8" class="widget widget_nav_menu"><div class="widget-wrap"><nav class="nav-header" itemscope="" itemtype="http://schema.org/SiteNavigationElement"><div class="responsive-menu-icon"></div><ul id="menu-menu-header" class="menu genesis-nav-menu responsive-menu"><li id="menu-item-5713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5713"><a href="http://www.hoangweb.com/" itemprop="url"><span itemprop="name">Trang chủ</span></a></li>
+<li id="menu-item-5862" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5862"><a href="http://www.hoangweb.com/gioi-thieu/" itemprop="url"><span itemprop="name">Giới thiệu</span></a></li>
+<li id="menu-item-6619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6619"><a href="http://www.hoangweb.com/thiet-ke-website-chuyen-nghiep/" itemprop="url"><span itemprop="name">Thiết kế website <span class="caret"></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-6040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6040"><a href="http://www.hoangweb.com/thiet-ke-web-gia-re/" itemprop="url"><span itemprop="name">Thiết kế web giá rẻ</span></a></li>
+	<li id="menu-item-6035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6035"><a href="http://www.hoangweb.com/thiet-ke-website-ban-hang/" itemprop="url"><span itemprop="name">Thiết kế website Bán hàng</span></a></li>
+	<li id="menu-item-6037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6037"><a href="http://www.hoangweb.com/thiet-ke-website-gioi-thieu-cong-ty/" itemprop="url"><span itemprop="name">Thiết kế website công ty</span></a></li>
+	<li id="menu-item-6039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6039"><a href="http://www.hoangweb.com/thiet-ke-website-wordpress/" itemprop="url"><span itemprop="name">Thiết kế web Wordpress</span></a></li>
+	<li id="menu-item-7065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7065"><a href="http://www.hoangweb.com/thiet-ke-website-joomla/" itemprop="url"><span itemprop="name">Thiết kế website Joomla</span></a></li>
+	<li id="menu-item-6034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6034"><a href="http://www.hoangweb.com/thiet-ke-web-tron-goi/" itemprop="url"><span itemprop="name">Thiết kế web trọn gói</span></a></li>
+	<li id="menu-item-7064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7064"><a href="http://www.hoangweb.com/thiet-ke-website-bat-dong-san-2/" itemprop="url"><span itemprop="name">Thiết kế web bất động sản</span></a></li>
+	<li id="menu-item-7066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7066"><a href="http://www.hoangweb.com/thiet-ke-website-nha-hang-khach-san/" itemprop="url"><span itemprop="name">Thiết kế web khách sạn</span></a></li>
+	<li id="menu-item-6033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6033"><a href="http://www.hoangweb.com/thiet-ke-web-chuan-seo-tai-ha-noi/" itemprop="url"><span itemprop="name">Thiết kế web chuẩn SEO</span></a></li>
+	<li id="menu-item-6041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6041"><a href="http://www.hoangweb.com/thiet-ke-website-theo-yeu-cau/" itemprop="url"><span itemprop="name">Thiết kế web theo yêu cầu</span></a></li>
+</ul>
+</li>
+<li id="menu-item-6337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6337"><a target="_blank" href="http://www.hoangweb.com.vn/" itemprop="url"><span itemprop="name">Kho giao diện</span></a></li>
+<li id="menu-item-5972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5972"><a href="http://www.hoangweb.com/khoa-hoc-thiet-ke-web-wordpress/" itemprop="url"><span itemprop="name">Khóa học <span class="caret"></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-6223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6223"><a href="http://www.hoangweb.com/khoa-hoc-thiet-ke-web-wordpress/" itemprop="url"><span itemprop="name">Chương trình đào tạo</span></a></li>
+	<li id="menu-item-5911" class="menu-item menu-item-type-post_type menu-item-object-khoa-hoc menu-item-5911"><a href="http://www.hoangweb.com/khoa-hoc/khoa-hoc-thiet-ke-website-bang-wordpress-cam-tay-chi-viec/" itemprop="url"><span itemprop="name">Học WordPress cơ bản</span></a></li>
+	<li id="menu-item-5973" class="menu-item menu-item-type-post_type menu-item-object-khoa-hoc menu-item-5973"><a href="http://www.hoangweb.com/khoa-hoc/khoa-hoc-thiet-ke-theme-wordpress/" itemprop="url"><span itemprop="name">Học thiết kế giao diện web</span></a></li>
+	<li id="menu-item-5977" class="menu-item menu-item-type-post_type menu-item-object-khoa-hoc menu-item-5977"><a href="http://www.hoangweb.com/khoa-hoc/khoa-hoc-lap-trinh-web-wordpress-nang-cao/" itemprop="url"><span itemprop="name">Học WordPress nâng cao</span></a></li>
+	<li id="menu-item-6224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6224"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" itemprop="url"><span itemprop="name">Học thiết kế Photoshop</span></a></li>
+</ul>
+</li>
+<li id="menu-item-3096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3096"><a href="http://www.hoangweb.com/lien-he/" itemprop="url"><span itemprop="name">Liên hệ</span></a></li>
+</ul></nav></div></section>
+</div></div></header><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><div class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://www.hoangweb.com/" rel="v:url" property="v:title">Trang chủ</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="http://www.hoangweb.com/category/github/" rel="v:url" property="v:title">Github</a> » <strong class="breadcrumb_last">Hướng dẫn sử dụng github trên windows</strong></span></span></span></div><article class="post-2179 post type-post status-publish format-standard has-post-thumbnail category-github tag-github-2 entry" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><header class="entry-header"><p class="entry-meta"><time class="entry-time" itemprop="datePublished" datetime="2014-08-19T22:27:55+00:00">Thứ Ba, 19/08/2014</time></p><h1 class="entry-title" itemprop="headline">Hướng dẫn sử dụng github trên windows</h1> 
+</header><div class="entry-content" itemprop="text"><div id="toc_container" class="no_bullets"><p class="toc_title">Nội dung <span class="toc_toggle">[<a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#">Ẩn</a>]</span></p><ul class="toc_list"><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Thiet_ke_website_WordPress"><span class="toc_number toc_depth_1">1</span> Thiết kế website WordPress</a><ul><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Cach_thuc_lam_viec_voi_github"><span class="toc_number toc_depth_2">1.1</span> Cách thức làm việc với github</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Thuat_ngu"><span class="toc_number toc_depth_2">1.2</span> Thuật ngữ</a></li></ul></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Su_dung_Git_voi_giao_dien"><span class="toc_number toc_depth_1">2</span> Sử dụng Git với giao diện</a><ul><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Thiet_lap_SSH_Keys"><span class="toc_number toc_depth_2">2.1</span> Thiết lập SSH Keys</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Cai_dat_SSH_Key_tren_Hosted_Git_Repository"><span class="toc_number toc_depth_2">2.2</span> Cài đặt SSH Key trên Hosted Git Repository</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Lam_viec_voi_Git"><span class="toc_number toc_depth_2">2.3</span> Làm việc với Git</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Tao_Local_Repository"><span class="toc_number toc_depth_2">2.4</span> Tạo Local Repository</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Hoc_lam_web_bang_Wordpress"><span class="toc_number toc_depth_2">2.5</span> Học làm web bằng Wordpress</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Su_dung_Git_GUI_Client"><span class="toc_number toc_depth_2">2.6</span> Sử dụng Git GUI Client</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Huong_dan_Commit"><span class="toc_number toc_depth_2">2.7</span> Hướng dẫn Commit</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Bat_dau_Push_len_repository_server"><span class="toc_number toc_depth_2">2.8</span> Bắt đầu Push lên repository server</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Clone_mot_Remote_Repository_den_Local_Repository_tren_may_tinh"><span class="toc_number toc_depth_2">2.9</span> Clone một Remote Repository đến Local Repository trên máy tính</a></li><li><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#Mot_so_dich_vu_Git_Repositories"><span class="toc_number toc_depth_2">2.10</span> Một số dịch vụ Git Repositories</a></li></ul></li></ul></div>
+<div class="essb_links essb_counters essb_counter_modern_right essb_displayed_top essb_share essb_template_metro essb_1842818019 print-no" id="essb_displayed_top_1842818019" data-essb-postid="2179" data-essb-position="top" data-essb-button-style="button" data-essb-template="metro" data-essb-counter-pos="right" data-essb-url="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" data-essb-twitter-url="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" data-essb-instance="1842818019"><ul class="essb_links_list"><li class="essb_item essb_totalcount_item" data-counter-pos="right"><span class="essb_totalcount essb_t_l_big" title=""><span class="essb_total_text"></span><span class="essb_t_nb">11</span></span></li><li class="essb_item essb_link_facebook nolightbox"> <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;t=H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s%E1%BB%AD+d%E1%BB%A5ng+github+tr%C3%AAn+windows" title="" onclick="essb_window(&#39;http://www.facebook.com/sharer/sharer.php?u=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;t=H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s%E1%BB%AD+d%E1%BB%A5ng+github+tr%C3%AAn+windows&#39;,&#39;facebook&#39;,&#39;1842818019&#39;); return false;" target="_blank" rel="nofollow"><span class="essb_icon"></span><span class="essb_network_name">Facebook</span></a><span class="essb_counter_right" cnt="11">11</span></li><li class="essb_item essb_link_twitter nolightbox"> <a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" title="" onclick="essb_window(&#39;https://twitter.com/intent/tweet?text=H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s%E1%BB%AD+d%E1%BB%A5ng+github+tr%C3%AAn+windows&amp;url=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;counturl=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;related=hoangweb&amp;via=hoangweb&amp;hashtags=đào tạo lập trình, học thiết kế web&#39;,&#39;twitter&#39;,&#39;1842818019&#39;); return false;" target="_blank" rel="nofollow"><span class="essb_icon"></span><span class="essb_network_name">Twitter</span></a></li><li class="essb_item essb_link_google nolightbox"> <a href="https://plus.google.com/share?url=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" title="" onclick="essb_window(&#39;https://plus.google.com/share?url=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&#39;,&#39;google&#39;,&#39;1842818019&#39;); return false;" target="_blank" rel="nofollow"><span class="essb_icon"></span><span class="essb_network_name">Google+</span></a></li></ul></div><div class="ad_first"><div class="square-ad">
+			<h2 class="title"><span id="Thiet_ke_website_WordPress"><a href="http://www.hoangweb.com/thiet-ke-website-wordpress/">Thiết kế website WordPress</a></span></h2>
+			<p>Đã làm hơn 2000 Web. BH trọn đời. Tư vấn Quảng Cáo doanh số cao nhất.</p>
+			<center><a class="ad-button" href="http://www.hoangweb.com/thiet-ke-website-wordpress/">&gt;</a></center>
+		</div></div><p>Github là gì? Dân lập trình có vẻ khá thân thuộc nhưng những ai không quan tâm đến nó cũng không biết nó là gì đâu, nó cũng giống như SVN là một source version control. <a href="http://github.com/" target="_blank" rel="nofollow">Github</a> còn được gọi là Code social network dành cho developer đi vào hoạt động tháng 2 năm 2008, là một dịch vụ lưu trữ source code cho các dự án sử dụng hệ thống quản lý phân tán GIT. Github sinh sau đẻ muộn nhưng có đầy đủ tính năng như SVN và hơn thế nữa.
+</p>
+<p>
+Theo khảo xát vào năm 2009, Github hiện là server git lưu trữ source code phổ biến nhất hiện nay. Hệ thống này được viết bằng Ruby on Rails, hiện tại github cung cấp dịch vụ thương mại và cả tài khoản miễn phí cho các dự án nguồn mở.
+</p>
+<p><a href="./Hướng dẫn sử dụng github trên windows_files/github.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/github.jpg" alt="github" width="338" height="149" class="aligncenter size-full wp-image-2184"></a></p>
+<p>
+Ngoài Github, còn có <a href="http://gitorious.org/" target="_blank" rel="nofollow">Gitorious</a> cũng là server hoạt động giống github, khá được chú ý đến.
+</p>
+<p></p><h3><span id="Cach_thuc_lam_viec_voi_github">Cách thức làm việc với github</span></h3>
+<p>Trước tiên bạn cài git trên windows, vào địa chỉ <a href="http://git-scm.com/downloads" target="_blank" rel="nofollow">http://git-scm.com/downloads</a> nhấn vào phiên bản dành cho windows. Đây là file cài đặt exe , bạn tiến hành cài đặt git như phần mềm bình thường. Sau khi cài xong, mở CMD lên gõ lệnh:</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git --version</pre></div></div></div></div></div></div></div>
+
+
+<p>Nếu không thông báo lỗi và trả về phiên bản của git thì bạn đã cài đặt thành công. Ví dụ mình đang dùng git 1.9.4</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git version 1.9.4.msygit.0</pre></div></div></div></div></div></div></div>
+
+
+
+<p>
+Làm việc với Github nói riêng hay hệ thống GIT nói chung có 2 workflow chính là local workflow và server workflow.
+</p>
+<p>
+Bạn có thể thay đổi chỉnh sửa code thoải mái ở local (tức là lưu file code trên máy tính của bạn), sau khi thay đổi xong bạn sẽ đồng bộ với tài khoản github trên server. Thuật ngữ này gọi là “<strong>commit</strong>“. Sau khi đã có bản code hoàn chỉnh một tính năng nào đó, hoặc fix bug xong hay bản có thể chạy được thì hãy commit lên server github. Chú ý: không được commit code dở dang còn đang mắc lỗi hoặc chưa qua test lên repository server sẽ làm ảnh hưởng tới thành viên khác. Tuy nhiên bạn cũng có thể tạo một repository để up code dở dang chưa hoàn chỉnh vào đó, với nhánh này thì không được public mà chỉ bạn có quyền xem và chỉnh sửa.
+</p>
+<p></p><h3><span id="Thuat_ngu">Thuật ngữ</span></h3>
+<ul>
+<li><strong>clone repository</strong>: tạo một bản sao của một repository đã tạo trước đó.</li>
+<li><strong>Commiting to the repository</strong>: sau khi thêm các file vào từ local vào hàng đợi (stage), bạn có thể commit và upload lên Git repository.</li>
+</ul>
+<p>
+<strong>Khởi tạo git local</strong><br>
+Bạn tạo một thư mục mới để cho phép git làm việc với thư mục này. Để làm điều này, bạn vào start -&gt; run gõ “cmd” và nhấn enter. Tại giao diện lệnh trỏ vào thư mục sẽ khởi tạo git local, chạy lệnh sau:</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">&gt; git init
+&lt;/p&gt;
+Lệnh này sẽ tạo folder ẩn có tên ".git" vào thư mục này, đó là những file repository cần thiết giúp bạn có thể tải các files có trong folder lên git server.  
+&lt;/p&gt;
+&lt;p&gt;
+Dự án code của bạn sẽ thiết kế các tệp tin trong folder trên, sau đó tiến hành tải lên server sau khi có files code hoàn chỉnh. Thêm một hoặc tất cả các files vào hàng đợi để chuẩn bị sẵn sàng đưa lên github, sử dụng lệnh sau sẽ đưa tất cả các files mới thay đổi vào stage.
+&lt;pre lang="plain"&gt;
+git add .</pre></div></div></div></div></div></div></div>
+
+
+<p>Tiến hành commit các files này.</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git commit -m "chú giải"</pre></div></div></div></div></div></div></div>
+
+
+<p>Nhập lý do trước khi tải code lên repository server, dòng này sẽ hiển thị trên repository. Có thể là thông báo cập nhật fixed lại lỗi của bản trước đó có tác dụng thông báo cho người dùng biết và sử dụng code của bạn nhiều hơn.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/git-commit-comment.png" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/git-commit-comment.png" alt="git-commit-comment" width="473" height="226" class="aligncenter size-full wp-image-2249"></a>
+</p>
+<p>
+Cuối cùng upload thay đổi lên server.</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git push origin master</pre></div></div></div></div></div></div></div>
+
+
+<p>Đó là nguyên lý hoạt động cơ bản của git, phần tiếp theo đây mình sẽ đi sâu chi tiết về lệnh git và sử dụng Git với giao diện.
+</p>
+<h2><span id="Su_dung_Git_voi_giao_dien">Sử dụng Git với giao diện</span></h2>
+<p>
+Sau khi cài xong, nhấn start gõ từ “git” bạn sẽ thấy có 2 ứng dụng “Git Bash” và “Git GUI”. Một bản sử dụng giao diện lệnh và một bản tương tác với các repository vendors như github, Bitbucket và Beanstalk thông qua giao diện.
+</p>
+<p></p><h3><span id="Thiet_lap_SSH_Keys">Thiết lập SSH Keys</span></h3>
+<p>Cài đặt ssh-keys cho máy tính của bạn rất đơn giản, bạn mở Git GUI lên. Nhấn vào <strong>Show SSH Key</strong> dưới menu <strong>Help</strong>.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/gui-ssh1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/gui-ssh1.jpg" alt="Git gui ssh" width="486" height="403" class="aligncenter size-full wp-image-2234"></a>
+</p>
+<p>
+Rất có thể ssh-key đã tồn tại trên máy tính của bạn trước đó, bạn có thể xóa nó đi hoặc backup lại key nếu không biết chính xác do đâu mà có.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/ssh-key.png" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/ssh-key.png" alt="ssh-key" width="383" height="263" class="aligncenter size-full wp-image-2235"></a><br>
+Thực hiện điều này, bằng cách xóa đi tất cả các files trong thư mục <code>C:\Users\<username>\.ssh.</username></code>. Thay <strong>&lt; username &gt;</strong> là tên user của máy tính bạn. Nếu bạn chưa biết user này, mở  start-&gt;run gõ cmd , và nhập dòng lệnh sau:</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">echo %username%</pre></div></div></div></div></div></div></div>
+
+
+
+<p>
+Để Tạo lại ssh key, bạn có thể nhấn vào nút <strong>Generate Key</strong>. Nếu có thể sẽ cần yêu cầu nhập passphrase (mật khẩu bảo mật). Hãy nhớ chuỗi mật khẩu này, bạn sẽ cần dùng lần sau.
+</p>
+<p>
+Lệnh tạo ssh keys trên giao diện tương ứng với command line:</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">ssh-keygen -t rsa</pre></div></div></div></div></div></div></div>
+
+
+
+<p></p><h3><span id="Cai_dat_SSH_Key_tren_Hosted_Git_Repository">Cài đặt SSH Key trên Hosted Git Repository</span></h3>
+<p>Trong bài này mình sẽ sử dụng Github làm ví dụ. Bạn cần khai báo chuỗi SSH keys đã thiết lập trên máy tính của bạn vào tài khoản trên github. Mục đích để làm gì?
+</p>
+<p>
+Khi thực hiện lệnh git đẩy dữ liệu lên github, git sẽ lấy ssh-key có trong máy tính và so sánh trên hệ thống github accounts, nhờ chuỗi key này mà phát hiện ra tài khoản github của bạn. Nhờ đó mà các files được push lên đúng repository trên github server.
+</p>
+<p>
+Nhấn vào “Copy to Clipboard”, truy cập vào settings chọn tab SSH keys trên github tại địa chỉ <a href="https://github.com/settings/ssh" target="_blank" rel="nofollow">https://github.com/settings/ssh</a>. Thêm ssh key bằng cách nhấn vào <strong>Add SSH key</strong>.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/ssh-keys1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/ssh-keys1.jpg" alt="Thêm ssh-key trên github" width="935" height="746" class="aligncenter size-full wp-image-2237" srcset="http://img.hoangweb.com/2014/08/ssh-keys1-500x398.jpg 500w, http://img.hoangweb.com/2014/08/ssh-keys1.jpg 935w" sizes="(max-width: 935px) 100vw, 935px"></a><br>
+Trường “Title” điền tên nhận dạng SSH key, field này không quan trọng chỉ để dễ nhớ. Tuy nhiên bạn nên đặt tên có liên quan đến ssh-key mà bạn sẽ sử dụng đến, ví dụ: WindowsPc”, “Macbook”, “Linux”
+</p>
+<p></p><h3><span id="Lam_viec_voi_Git">Làm việc với Git</span></h3>
+<p>Như vậy lệnh git trên máy tính của bạn đã có thể bắt đầu kết nối vào github repository. Chúng ta sẽ cần tạo một repository để push code lên đó.<br>
+Tạo Repository trên github thì quá thân quen với những developer rồi, Tại trang chủ <a href="https://github.com/" target="_blank" rel="nofollow">github.com</a>, giả sử bạn đã đăng nhập tài khoản vào github, nhấn vào nút New repository bên phải để tạo mới repository. Nhập tên và mô tả cho repo, nếu bạn dùng github miễn phí thì giữ nguyên trạng thái <strong>public</strong>, trạng thái này cho phép người khác có thể tìm thấy code repository này của bạn. Chế độ bảo vệ code private nếu dự án của bạn muốn bảo mật không để lộ code ra bên ngoài, tính năng này bạn phải trả phí.
+</p>
+<p>
+Reposity này mình làm demo do đó không checkbox vào option “Initialize..”, cài đặt này sẽ tạo file hướng dẫn README cho repository. Kết thúc nhấn Create repository.
+</p>
+<p></p><h3><span id="Tao_Local_Repository">Tạo Local Repository</span></h3>
+<p>Bây giờ đến phần làm code của bạn rùi, tạo mọi files sử dụng cho repository, bạn sẽ phát triển code của mình trên máy tính sau khi hoàn chỉnh code hay bản code đã có thể hoạt động thì bắt đầu đưa lên repository vừa tạo ở trên.
+</p>
+<p>
+Tại giao diện Git GUI, nhấn vô “Create New Repository”.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/git-gui1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/git-gui1.jpg" alt="tạo repository với git gui" width="486" height="403" class="aligncenter size-full wp-image-2238"></a><br>
+Lựa chọn thư mục để tạo nội dung cho repository trên máy tính. Chú ý: đường dẫn folder này phải chưa có trước đó, chọn đường dẫn thư mục và nhập tên cho repository sẽ tạo trên máy tính (local). Giống như sau:<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/create-repo1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/create-repo1.jpg" alt="tạo repository github" width="603" height="289" class="aligncenter size-full wp-image-2239" srcset="http://img.hoangweb.com/2014/08/create-repo1-500x239.jpg 500w, http://img.hoangweb.com/2014/08/create-repo1.jpg 603w" sizes="(max-width: 603px) 100vw, 603px"></a>
+</p><div style="text-align:center;"><div class="entry-summary" style="background: #f9f9f9;margin: 20px 0; border-left: 5px solid #e44a3c;font-size: 1em;line-height: 30px;padding:10px;">
+	<div class="grid-40 mobile-grid-100"> 
+		<a target="_blank" href="http://www.hoangweb.com/khoa-hoc-thiet-ke-web-wordpress/" rel="bookmark" title="Học làm web bằng Wordpress" style="border: 0px;"> <img style="width:200px;float:left;margin-right:10px;" class="thumbnail" src="./Hướng dẫn sử dụng github trên windows_files/hoc-thiet-ke-web.jpg" alt="Học làm web bằng Wordpress" width="100%" height="auto"> </a>
+	</div>
+	<div class="grid-60 mobile-grid-100 grid-left"><h3 style="font-size: 33px; line-height: 38px;color:#f990100;font-family:arial,sans-serif; margin: 0;padding-bottom: 10px;"><span id="Hoc_lam_web_bang_Wordpress"><a target="_blank" href="http://www.hoangweb.com/khoa-hoc-thiet-ke-web-wordpress/" title="Học làm web bằng Wordpress" rel="bookmark">Học làm web bằng Wordpress</a></span></h3>
+	<p>Tất cả những gì bạn cần là kiến thức để làm chủ thiết kế web Wordpress. Đó là lý do tại sao bạn nên tham dự khóa học thiết kế website bằng Wordpress tại Hoangweb.com<br>✰ ✰ ✰ ✰ ✰</p></div><div class="clear"></div></div></div>
+<p>
+Địa chỉ git của repository có dạng <code>git@github.com:Username/repository-name.git</code>. Ví dụ: tôi có repository tên “test-repo” trên tài khoản github “hoangsoft90”, thì repository URL là:<br>
+git@github.com:hoangsoft90/test-repo.git<br>
+Sử dụng địa chỉ repository này để push các files lên repository server.
+</p>
+<p></p><h3><span id="Su_dung_Git_GUI_Client">Sử dụng Git GUI Client</span></h3>
+<p>Bạn có thể làm việc với các lệnh git bằng command line hoặc thao tác trên giao diện. Tiếp theo sau đây mình sẽ hướng dẫn bạn cách sử dụng phần mềm Git GUI để tải code lên repository có sẵn. Chỉ có 3 bước đơn giản là: staging changes, commits, và pushes.
+</p>
+<p>
+Khi bạn di chuyển các files vào local repository, ban sẽ thấy các files này trong cửa sổ “Unstaged Changes”. Phần này chúng ta hiểu đơn giản đây là các files mới sửa đổi của repo, nếu chưa thấy xuất hiện bạn nhấn vào nút <strong>Rescan</strong>. Cửa sổ này cũng thông báo trạng thái của files đã xóa, hoặc mới cập nhật..Cứ nhấn vào Rescane để xem những sửa đổi của folder local repository.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/git-gui-stage1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/git-gui-stage1.jpg" alt="git gui stage" width="820" height="444" class="aligncenter size-full wp-image-2240" srcset="http://img.hoangweb.com/2014/08/git-gui-stage1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/git-gui-stage1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a>
+</p>
+<p>Nút rescan tương ứng với lệnh <code>git status</code>
+</p>
+<p>
+Nhấn tiếp vào <strong>Stage Changed</strong>, để đưa tất cả các files trong mục Unstaged Changes vào hàng đợi Commit. Thao tác này tương ứng với lệnh <code>git add .</code><br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/git-gui-stage-changes1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/git-gui-stage-changes1.jpg" alt="git-gui-stage-changes" width="820" height="444" class="aligncenter size-full wp-image-2241" srcset="http://img.hoangweb.com/2014/08/git-gui-stage-changes1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/git-gui-stage-changes1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a>
+</p>
+<p></p><h3><span id="Huong_dan_Commit">Hướng dẫn Commit</span></h3>
+<p>Các files đã nằm trong mục Staged Changed sẽ được commit. Nhập chú giải cho lý do commit lần này vào field “Commit Message” sau đó nhấn vào nút Commit như hình dưới.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/git-gui-commit1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/git-gui-commit1.jpg" alt="commit local repository git gui" width="820" height="444" class="aligncenter size-full wp-image-2242" srcset="http://img.hoangweb.com/2014/08/git-gui-commit1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/git-gui-commit1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a><br>
+Bạn cũng có thể sử dụng lệnh git cho tác vụ này:</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git commit -am "commit comment"</pre></div></div></div></div></div></div></div>
+
+
+
+<p></p><h3><span id="Bat_dau_Push_len_repository_server">Bắt đầu Push lên repository server</span></h3>
+<p>Trước khi người dùng internet có thể truy cập vào các code của bạn, chúng ta cần đẩy (push) tất cả các files có sửa đổi đã được commit lên Hosted repository như github, Bitbucket..
+</p>
+<p>
+Trước khi có thể làm điều này, chúng ta thêm địa chỉ git của repository đã tạo trên github vào Git GUI. Từ menu <strong>Remote</strong> của phần mềm chọn vào <strong>Add…</strong>. Điền Name và Location trong cửa sổ Dialog hiện ra, trường Name hầu hết sẽ điền là “origin”. Field này có tác dụng thay cho địa chỉ, mỗi một địa chỉ git URL sẽ có một tên riêng không trùng với nhau. Bạn sẽ thấy có dùng tên của địa chỉ Git repository trong câu lệnh quen thuộc git push.</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git push origin master</pre></div></div></div></div></div></div></div>
+
+
+<p><a href="./Hướng dẫn sử dụng github trên windows_files/add-remote-origin1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/add-remote-origin1.jpg" alt="Thêm địa chỉ git repository" width="820" height="444" class="aligncenter size-full wp-image-2243" srcset="http://img.hoangweb.com/2014/08/add-remote-origin1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/add-remote-origin1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a><br>
+Thao tác này tương đương với lệnh <code>git remote add &lt; remote-name &gt; &lt; git-repository-url &gt;</code>. Nhấn Add để hoàn tất.
+</p>
+<p>
+Tại sao mình lại lấy tên “origin” cho remote git, vì khi bạn nhấn lệnh Push mặc định option remote vào repository luôn trỏ vào tên “origin”. Tiếp tục nhấn vào Push để upload những files đã commited.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/push-21.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/push-21.jpg" alt="git push" width="945" height="519" class="aligncenter size-full wp-image-2244" srcset="http://img.hoangweb.com/2014/08/push-21-500x274.jpg 500w, http://img.hoangweb.com/2014/08/push-21.jpg 945w" sizes="(max-width: 945px) 100vw, 945px"></a>
+</p>
+<p>
+Tiếp theo, bạn sẽ nhận được thông báo xác nhận, đừng lo lắng cửa sổ này chỉ hiển ở lần push đầu tiên. gõ vào “yes” và nhấn OK.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/push1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/push1.jpg" alt="git push" width="820" height="444" class="aligncenter size-full wp-image-2245" srcset="http://img.hoangweb.com/2014/08/push1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/push1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a>
+</p>
+<p>
+Bạn có thể nhận tiếp thông báo nhập passpharse của SSH Key, có nhớ ở phần tạo ssh key ở trên không? chuỗi passpharse sẽ được dùng tại bước này.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/push-passphrase1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/push-passphrase1.jpg" alt="push-passphrase" width="820" height="444" class="aligncenter size-full wp-image-2246" srcset="http://img.hoangweb.com/2014/08/push-passphrase1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/push-passphrase1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a><br>
+Git UI có yêu cầu một lần nhập passpharse cho lần upload code đầu tiên, bạn cũng không cần lo lắng phải nhập lần sau.
+</p>
+<p>
+Nếu push lên github repository thành công, bạn sẽ nhìn thấy dòng thông báo giống thế này.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/push-complete1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/push-complete1.jpg" alt="git push complete" width="820" height="444" class="aligncenter size-full wp-image-2247" srcset="http://img.hoangweb.com/2014/08/push-complete1-500x270.jpg 500w, http://img.hoangweb.com/2014/08/push-complete1.jpg 820w" sizes="(max-width: 820px) 100vw, 820px"></a>
+</p>
+<p></p><h3><span id="Clone_mot_Remote_Repository_den_Local_Repository_tren_may_tinh">Clone một Remote Repository đến Local Repository trên máy tính</span></h3>
+<p>Các bước để download một remote Repository về máy tính, bạn nhấn vào liên kết “Clone Existing Repository” trên giao diện Git GUI. Mục Source Location nhập địa chỉ git của Repository có trên server và  chọn thư mục lưu trên máy tính cho Target Directory. Giống như cách tạo local repository như ở trên. Các files sẽ tải về sau khi Nhấn clone và bạn có thể làm việc tiếp tục với repository này, sau đó lại commit và push bản mới cập nhật lên Host Repository.<br>
+<a href="./Hướng dẫn sử dụng github trên windows_files/clone-repo1.jpg" target="_blank" rel="nofollow" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/clone-repo1.jpg" alt="clone repository" width="649" height="288" class="aligncenter size-full wp-image-2248" srcset="http://img.hoangweb.com/2014/08/clone-repo1-500x221.jpg 500w, http://img.hoangweb.com/2014/08/clone-repo1.jpg 649w" sizes="(max-width: 649px) 100vw, 649px"></a>
+</p>
+<p>
+Bạn cũng có thể sử dụng lệnh git clone thay vì thực hiện trên giao diện Git GUI. Mở cmd hoặc Git Bash gõ lệnh sau:</p>
+
+
+<div class="wp-geshi-highlight-wrap5"><div class="wp-geshi-highlight-wrap4"><div class="wp-geshi-highlight-wrap3"><div class="wp-geshi-highlight-wrap2"><div class="wp-geshi-highlight-wrap"><div class="wp-geshi-highlight"><div class="plain"><pre class="de1">git clone https://github.com/&lt;tên username&gt;/&lt;tên repo&gt;.git</pre></div></div></div></div></div></div></div>
+
+
+<p>Sau khi tải về hoàn tất, bạn vào explorer theo đường dẫn tới tên của repository. Tại đây có thể xem sửa xóa files tùy ý (lưu ý không đụng vào folder .git nhá).
+</p>
+<p></p><h3><span id="Mot_so_dich_vu_Git_Repositories">Một số dịch vụ Git Repositories</span></h3>
+<ul>
+<li><a title="Github" href="http://github.com/" sl-processed="1" target="_blank" rel="nofollow">Github</a> – Unlimited Free Public Repositories </li>
+<li><a title="Github" href="http://bitbucket.org/" sl-processed="1" target="_blank" rel="nofollow">Bitbucket</a> – Unlimited Free Public and Private Repositories </li>
+<li><a title="Github" href="http://beanstalkapp.com/" sl-processed="1" target="_blank" rel="nofollow">Beanstalk</a> – Private Git with Great FTP Deployments </li>
+</ul>
+<b>Tìm trên Google:</b><ul><li>huớng dẫn quản lý github công ty (1)</li></ul><p></p><br><p>Tags: <a href="http://www.hoangweb.com/tag/github-2/" rel="tag">github</a></p><div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-order-by="reverse_time" href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" data-width="100%" data-numposts="15" data-colorscheme="light" fb-xfbml-state="rendered"><span style="height: 351px;"><iframe id="f4b9dd098" name="f2e0025674" scrolling="no" title="Facebook Social Plugin" class="fb_ltr fb_iframe_widget_lift" src="./Hướng dẫn sử dụng github trên windows_files/comments.html" style="border: none; overflow: hidden; height: 351px; width: 100%;"></iframe></span></div><div id="google_comments"></div> <!-- google comment --><div class="yarpp-related">
+<h3>Bài viết liên quan:</h3><ol>
+<li><a href="http://www.hoangweb.com/wordpress-site/nhung-gists-snippet-vao-blog-wordpress-hay-nhat" rel="bookmark" title="Nhúng Gists snippet vào blog wordpress hay nhất">Nhúng Gists snippet vào blog wordpress hay nhất </a></li>
+</ol>
+</div>
+<div class="essb_break_scroll"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories"><a href="http://www.hoangweb.com/category/github/" rel="category tag">Github</a></span> </p></footer></article></main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope="" itemtype="http://schema.org/WPSideBar"><section id="enews-ext-2" class="widget enews-widget"><div class="widget-wrap"><div class="enews"><h4 class="widget-title widgettitle">NHẬN BÀI VIẾT QUA EMAIL</h4>
+<p>Bạn phải đăng nhập email để xác nhận việc đăng ký. Vui lòng kiểm tra mục Spam nếu không tìm thấy !</p>
+			<form id="subscribe-enews-ext-2" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( &#39;http://feedburner.google.com/fb/a/mailverify?uri=hoangwebltd&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true" name="enews-ext-2">
+				<label for="subbox" class="screenread">E-Mail Address</label><input type="email" value="" id="subbox" placeholder="E-Mail Address" name="email" required="required">
+				<input type="hidden" name="uri" value="hoangwebltd">
+				<input type="hidden" name="loc" value="vi">
+				<input type="submit" value="Đăng ký ngay" id="subbutton">
+			</form>
+		</div></div></section>
+<section id="google-badge-box-2" class="hide_widget_on_mobile widget mts_googleplus"><div class="widget-wrap">			<script src="./Hướng dẫn sử dụng github trên windows_files/platform.js" async="" defer="" gapi_processed="true"></script>
+			<div id="___page_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 352px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 352px;" tabindex="0" vspace="0" width="100%" id="I0_1457596471449" name="I0_1457596471449" src="./Hướng dẫn sử dụng github trên windows_files/page.html" data-gapiattached="true" title="+Badge"></iframe></div>
+		</div></section>
+<section id="hw_yahoo_skype_status-4" style="background-color:#FFFFFF !important;" class="widget widget_hw_yahoo_skype_status"><div style="background-color:#FFFFFF !important;" class="widget-wrap"><h4 class="widget-title widgettitle">Tư vấn dịch vụ</h4>
+<div style="text-align:center;padding:10px;">Email: <span style="color: #e44a3c;">hotro@hoangweb.vn</span></div><table class="support-online" border="0">			<tbody><tr style="border-top: 1px solid #dadada;" class="line">
+				<td valign="middle"><strong>Quang Huy</strong></td>
+												
+				
+								<td>
+				<a class="seoquake-nofollow" href="skype:huy.freedom?call" title="Talk with me via Skype " rel="nofollow" style="border: 0px;"><img border="0" class="" src="./Hướng dẫn sử dụng github trên windows_files/skype.png" alt="Quang Huy" style="vertical-align:middle;"></a>
+				</td>
+											</tr>
+			<tr>
+				<td></td>
+				<td style="text-align:left;" colspan="1"><span style="color: #ff0000;font-size: 18px;"><strong>0966 126 910</strong></span></td>
+			</tr>
+				<tr style="border-top: 1px solid #dadada;" class="line">
+				<td valign="middle"><strong>Văn Hoàng</strong></td>
+												
+				
+								<td>
+				<a class="seoquake-nofollow" href="skype:huy.freedom?call" title="Talk with me via Skype " rel="nofollow" style="border: 0px;"><img border="0" class="" src="./Hướng dẫn sử dụng github trên windows_files/skype.png" alt="Văn Hoàng" style="vertical-align:middle;"></a>
+				</td>
+											</tr>
+			<tr>
+				<td></td>
+				<td style="text-align:left;" colspan="1"><span style="color: #ff0000;font-size: 18px;"><strong>0944 049 910</strong></span></td>
+			</tr>
+	</tbody></table></div></section>
+<section id="text-10" class="hide_widget_on_mobile widget widget_text"><div class="widget-wrap">			<div class="textwidget"><a target="_blank" href="http://www.hoangweb.com/email-server/" style="border: 0px;"><img src="./Hướng dẫn sử dụng github trên windows_files/email-server.gif" alt="Email Sever"></a></div>
+		</div></section>
+</aside></div></div><div class="home-bottom widget-area"><section id="testimonial_ssliderr_wid-2" class="widget testimonial_sliderr_wclass"><div class="widget-wrap"><h4 class="widget-title widgettitle"></h4>
+<style type="text/css">.rich-testimonials-fouc .rt-set2{display:none;}</style><script type="text/javascript"> jQuery("html").addClass("rich-testimonials-fouc");jQuery(document).ready(function() {		   jQuery(".rich-testimonials-fouc .rt-set2").show();		});jQuery(document).ready(function() {jQuery("head").append("<style type=\"text/css\">.rt-set2.rich-testimonials{width:100% !important;max-width:1200px;display:block;}.rt-set2 img{max-width:90% !important;}.testimonial_side{width:100% !important;}</style>");});jQuery(document).ready(function() {			jQuery("#rich-testimonials-recent").testimonialDim({					skin			: "simplist",					handle			: "rich-testimonials-recent",					visibleItems		: 2,					scrollItems		: 2,					sliderWidth		:1200,					sliderHeight		:240,					transition		:"scroll",					prevnext		:1,					autostep		: 0,					borderWidth		: 0,					time			: 20,					type			: 0,					easing			: "swing",					duration		: 600,					navstyle		: style="width:16px;height:16px;",					navnum			: 0			});						jQuery("head").append("<style type=\"text/css\">#rich-testimonials-recent-nav a.selected{background-position:-16px 0 !important;}.rt-simplist .rt-nav-fillup .inner-nav a { border: 2px solid #cc0202 !important;}.rt-simplist .rt-nav-fillup .inner-nav.selected a:after { background-color: #cc0202 !important; }</style>");			jQuery("#rich-testimonials-recent-wrap").hover( 				function() { jQuery(this).find(".rt-nav-arrow-wrap").show();}, 				function() { jQuery(this).find(".rt-nav-arrow-wrap").hide();} );			jQuery("#rich-testimonials-recent").touchwipe({					wipeLeft: function() {						jQuery("#rich-testimonials-recent").trigger("next", 1);					},					wipeRight: function() {						jQuery("#rich-testimonials-recent").trigger("prev", 1);					},					preventDefaultEvents: false			});			jQuery("#rich-testimonials-recent").find(".rt-mail img").addClass("");				jQuery("#rich-testimonials-recent").find(".rt-mail img").css({"border":"0px solid #cccccc","border-radius":"50%"});					});</script> 	<noscript>&lt;p&gt;&lt;strong&gt;This page is having a slideshow that uses Javascript. Your browser either doesn't support Javascript or you have it turned off. To see this page as it is meant to appear please use a Javascript enabled browser.&lt;/strong&gt;&lt;/p&gt;</noscript>	<div id="rich-testimonials-recent-wrap" class="rich-testimonials rt-set2 rt-simplist" style="width: 1200px; display: block;">								<div class="testimonial_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1200px; height: 240px; margin: 0px; overflow: hidden;"><div id="rich-testimonials-recent" class="rt-instance" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 13200px; height: 240px; z-index: auto;"><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/trangchip94.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Từ khi tôi nhờ các bạn <a href="http://www.hoangweb.com/">thiết kế&nbsp;web</a> doanh số bán hàng của tôi tăng lên rõ rệt. Dịch vụ SEO của các bạn giúp&nbsp;website của tôi tiếp cận ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Trang Chip</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;"><a href="http://www.hoangweb.com/" rel="external nofollow" style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">Quần áo rẻ đẹp</a></span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/hoangquach.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Tôi thán phục với các kỹ năng thiết kế website&nbsp;và lập trình sáng tạo của các bạn. Một trong những sản phẩm mà tôi đánh giá rất cao để <a ...<="" span=""></a><div class="testimonial-cust-wrap"><a ...<="" span=""><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Nguyễn Huy Hoàng</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;"></span></a><a href="http://www.hoangweb.com/" rel="external nofollow" style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">Hoang Web Ltd</a></div></span></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/01.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Một&nbsp;khóa học rất hữu&nbsp;ích giành cho người muốn hành nghề <a href="http://www.hoangweb.com/">thiết kế&nbsp;website</a> chuyên nghiệp. Cám&nbsp;ơn sự chia sẻ của anh Hoàng, rất chi tiết và thiết thực qua những ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Vũ Đức Minh - SeOer</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">VTVCap</span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/06.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Mình rất hài lòng về cách tổ chức lớp học cũng như sự nhiệt tình dạy <a href="http://www.hoangweb.com/khoa-hoc-thiet-ke-web-wordpress/">học thiết kế&nbsp;web</a>,&nbsp;mình được dạy thật - học thật và làm thật. Giảng ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Nguyễn Thị Hồng Mây</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">SeaBank</span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/04.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Kết thúc khóa học mình khá tự tin để triển khai <a href="http://www.hoangweb.com/">thiết kế&nbsp;web</a>&nbsp;cho một dự án kinh doanh online cho chính mình.&nbsp;Mình&nbsp;rất hài lòng về cách tổ chức lớp ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Phạm Văn Đồng</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">FPT 4U</span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/03.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Học ở Trung tâm Hoangweb Ltd, mình được dạy thật - học thật và làm thật. Giảng viên tận tình truyền đạt kiến thức và giúp đỡ mình khi gặp ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Quách Ngọc Hải</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">CMC Telecom</span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div>					<div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/05.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> Học ở Trung tâm&nbsp;Hoangweb Ltd, mình được dạy thật - học thật và <a href="http://www.hoangweb.com/thiet-ke-web-gia-re/">thiết kế&nbsp;web</a>&nbsp;thật. Giảng viên tận tình truyền đạt kiến thức và giúp đỡ mình khi gặp ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Đinh Tiến Dũng</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">OsMedia TM</span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/07.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> “Từ nhỏ mình đã rất thích <a href="http://www.hoangweb.com/">thiết kế&nbsp;website</a>. Đến khi học tại Hoangweb Ltd, mình học&nbsp;thêm tự tin phát triển kỹ năng SEO&nbsp;với những kiến thức đã&nbsp;được học. Hy ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Nguyễn Thị Như Quỳnh</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">Hoangweb Ltd</span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/08.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> “Để làm việc tốt trong ngành Marketing, bên cạnh tố chất, việc trau dồi kiến thức trên lớp cùng kiến thức thực tiễn rất quan trọng. Đó là tiêu chí ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Lương Thị Ngọc Mai</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;"><a href="http://www.hoangweb.com/github/hoamai.com.vn" rel="external nofollow" style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">Công ty Hoa Mai</a></span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div><div class="rt-slideri" style="border: 0px solid rgb(204, 204, 204); width: 600px; height: 240px; background-color: transparent;">			<!-- rt-slideri --><div class="rt-avatar-wrap"><span class="rt-avatar"><img class="" src="./Hướng dẫn sử dụng github trên windows_files/02.jpg" style="max-height:160px;width:160px;border:0px solid #cccccc;border-radius:50%;"></span></div><div class="rt-quote" style="font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;font-style:normal;color:#333333;"><span class="rt-content " style="float: none;"> “Thay vì nghe lời bố mẹ học Đại học, mình đã chọn <a href="http://www.hoangweb.com/khoa-hoc-thiet-ke-web-wordpress/">học thiết kế&nbsp;web</a> tại Hoangweb Ltd. Được đào tạo trong môi trường thực tế,&nbsp;năng động, giờ đây&nbsp;mình ...</span><div class="testimonial-cust-wrap"><span class="rt-by " style="line-height:19px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:16px;font-weight:normal;font-style:normal;color:#e44a3c;">Lê Văn Đức – WP#07</span><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><div class="dashicons dashicons-star-filled" style="color:#e44a3c;font-size:20px;width:20px;"></div><span class="rt-site " style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;"><a href="http://hoangweb.edu.vn/" rel="external nofollow" style="line-height:16px;font-family:Arial,Helvetica,sans-serif, Arial, Helvetica, sans-serif;font-size:13px;font-weight:normal;font-style:normal;color:#222222;">Công ty Hoàng Web</a></span></div></div>	<div class="rt-clearlt"></div><div class="rt-clearrt"></div><!-- /rt-slideri -->		</div></div></div>		<div class="rt-nav-arrow-wrap"><a class="rt-prev" id="rich-testimonials-recent-prev" href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" style="display: block; background: url(&quot;http://www.hoangweb.com/wp-content/plugins/rich-testimonials/css/skins/simplist/buttons/default/prev.png&quot;) 0px 0px no-repeat transparent;"><span>prev</span></a><a class="rt-next" id="rich-testimonials-recent-next" href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" style="display: block; background: url(&quot;http://www.hoangweb.com/wp-content/plugins/rich-testimonials/css/skins/simplist/buttons/default/next.png&quot;) 0px 0px no-repeat transparent;"><span>next</span></a></div>	</div></div></section>
+</div><div class="footer-widgets"><div class="wrap"><div class="footer-widgets-1 widget-area"><section id="nav_menu-7" class="widget widget_nav_menu"><div class="widget-wrap"><h4 class="widget-title widgettitle">Thiết kế web</h4>
+<div class="menu-thiet-ke-web-container"><ul id="menu-thiet-ke-web" class="menu"><li id="menu-item-6081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-6081"><a href="http://www.hoangweb.com/" itemprop="url">Tư vấn thiết kế website</a></li>
+<li id="menu-item-6624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6624"><a href="http://www.hoangweb.com/thiet-ke-website-chuyen-nghiep/" itemprop="url">Thiết kế web chuyên nghiệp</a></li>
+<li id="menu-item-6625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6625"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" itemprop="url">Nâng cấp, chỉnh sửa web</a></li>
+<li id="menu-item-6626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6626"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" itemprop="url">Lập trình web ứng dụng</a></li>
+</ul></div></div></section>
+</div><div class="footer-widgets-2 widget-area"><section id="nav_menu-11" class="widget widget_nav_menu"><div class="widget-wrap"><h4 class="widget-title widgettitle">Quảng cáo web</h4>
+<div class="menu-quang-cao-web-container"><ul id="menu-quang-cao-web" class="menu"><li id="menu-item-6627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6627"><a href="http://www.hoangweb.com/dich-vu-seo-uy-tin-chuyen-nghiep/" itemprop="url">Dịch vụ SEO chuyên nghiệp</a></li>
+<li id="menu-item-6628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6628"><a href="http://www.hoangweb.com/quang-cao-google-adwords/" itemprop="url">Quảng cáo Google</a></li>
+<li id="menu-item-6629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6629"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" itemprop="url">Viết bài chuẩn SEO giá rẻ</a></li>
+<li id="menu-item-6630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6630"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" itemprop="url">Email marketing</a></li>
+</ul></div></div></section>
+</div><div class="footer-widgets-3 widget-area"><section id="nav_menu-10" class="widget widget_nav_menu"><div class="widget-wrap"><h4 class="widget-title widgettitle">Dịch vụ Web</h4>
+<div class="menu-dich-vu-web-container"><ul id="menu-dich-vu-web" class="menu"><li id="menu-item-6620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6620"><a href="http://www.hoangweb.com/dang-ky-ten-mien/" itemprop="url">Tên miền (Domain)</a></li>
+<li id="menu-item-6621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6621"><a href="http://www.hoangweb.com/hosting-chat-luong-cao-75kthang/" itemprop="url">Lưu trữ website (Hosting)</a></li>
+<li id="menu-item-5945" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5945"><a href="http://www.hoangweb.com/email-server/" itemprop="url">Hệ thống email</a></li>
+<li id="menu-item-6631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6631"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" itemprop="url">Chăm sóc web toàn diện</a></li>
+</ul></div></div></section>
+</div><div class="footer-widgets-4 widget-area"><section id="text-8" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><iframe style="border: 0;" src="./Hướng dẫn sử dụng github trên windows_files/embed.html" width="280" height="200" frameborder="0"></iframe></div>
+		</div></section>
+</div></div></div><footer class="site-footer" itemscope="" itemtype="http://schema.org/WPFooter"><div class="wrap"><p style="margin-bottom:10px!important;"><strong><span style="color:#999;font-size:17px!important;">CÔNG TY TNHH HOÀNG WEB - THIẾT KẾ WEB CHUYÊN NGHIỆP</span></strong></p><p>Địa chỉ: Số 8, Ngõ 112 Tây Sơn, Phường Quang Trung, Quận Đống Đa, Thành Phố Hà Nội</p><p>Điện thoại: 04.6259.8022 | Di động: 0966.126.910 - 0944.049.910 | Email: laptrinhweb123@gmail.com</p><p>Dịch vụ <a title="Dịch vụ thiết kế web" href="http://www.hoangweb.com/">thiết kế web</a> - <a title="Thiết kế website chuyên nghiệp" href="http://www.hoangweb.com/thiet-ke-website-chuyen-nghiep/">Thiết kế website chuyên nghiệp</a> - <a title="Thiết kế web bán hàng" href="http://www.hoangweb.com/thiet-ke-website-ban-hang/">Thiết kế web bán hàng</a> - <a title="Thiết kế website WordPress" href="http://www.hoangweb.com/thiet-ke-website-wordpress/">Thiết kế website WordPress</a> - <a title="Thiết kế web chuẩn SEO" href="http://www.hoangweb.com/thiet-ke-web-chuan-seo-tai-ha-noi/">Thiết kế web chuẩn SEO</a> - <a title="Thiết kế website giá rẻ" href="http://www.hoangweb.com/thiet-ke-web-gia-re/">Thiết kế website giá rẻ</a> <a href="http://www.dmca.com/Protection/Status.aspx?ID=55c54081-b4e9-4f70-bcde-a198a209848b" title="DMCA.com Protection Status" class="dmca-badge" style="border: 0px;"> <img src="./Hướng dẫn sử dụng github trên windows_files/dmca_protected_sml_120m.png" alt="DMCA.com Protection Status"></a>  <script src="./Hướng dẫn sử dụng github trên windows_files/" type="text/javascript"></script></p><p></p></div></footer></div><iframe name="oauth2relay655121513" id="oauth2relay655121513" src="./Hướng dẫn sử dụng github trên windows_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50381053-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Code dành cho Thẻ tiếp thị lại -->
+<!--------------------------------------------------
+Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng cá nhân hay đặt thẻ tiếp thị lại trên các trang có liên quan đến danh mục nhạy cảm. Xem thêm thông tin và hướng dẫn về cách thiết lập thẻ trên: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 972952781;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/conversion.js">
+</script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./Hướng dẫn sử dụng github trên windows_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/972952781/?frame=0&amp;random=1457596492112&amp;cv=8&amp;fst=1457596492112&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=1&amp;u_tz=420&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=7&amp;frm=0&amp;url=http%3A//www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;tiba=H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng%20github%20tr%C3%AAn%20windows" /&gt;</iframe>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/972952781/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_http" src="./Hướng dẫn sử dụng github trên windows_files/xd_arbiter.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_https" src="./Hướng dẫn sử dụng github trên windows_files/xd_arbiter(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f75991834" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" src="./Hướng dẫn sử dụng github trên windows_files/ping.html" style="display: none;"></iframe></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.4&appId=230403760445599";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",30227]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script><script>
+/*
+        //jQuery(document).ready(function(){
+            var $olark = new HW_OlarkChat();
+            $olark.setEmailReceiveTranscript('hotro@hoangweb.com');
+        //});
+*/
+    </script>
+<script>
+  (function() {
+    var cx = '015467801237401970185:d2-myekmd0e';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1399517223700386";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+</script>
+<div class="essb-mobile-sharebar" onclick="essb_mobile_sharebar_open();"><div class="essb-mobile-sharebar-icon"></div><div class="essb-mobile-sharebar-text">Chia sẻ</div></div><div class="essb-mobile-sharebar-window"><div class="essb-mobile-sharebar-window-close-title" onclick="essb_mobile_sharebar_close(); return false;"><a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" class="essb-mobile-sharebar-window-close"></a></div><div class="essb-mobile-sharebar-window-content"><div class="essb_links essb_displayed_sharebar essb_share essb_template_metro essb_2110685098 essb_width_columns_1 print-no" id="essb_displayed_sharebar_2110685098" data-essb-postid="2179" data-essb-position="sharebar" data-essb-button-style="button" data-essb-template="metro" data-essb-counter-pos="inside" data-essb-url="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" data-essb-twitter-url="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" data-essb-instance="2110685098"><ul class="essb_links_list"><li class="essb_item essb_link_facebook nolightbox"> <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;t=H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s%E1%BB%AD+d%E1%BB%A5ng+github+tr%C3%AAn+windows" title="" onclick="essb_window(&#39;http://www.facebook.com/sharer/sharer.php?u=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;t=H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s%E1%BB%AD+d%E1%BB%A5ng+github+tr%C3%AAn+windows&#39;,&#39;facebook&#39;,&#39;2110685098&#39;); return false;" target="_blank" rel="nofollow"><span class="essb_icon"></span><span class="essb_network_name">Facebook</span></a></li><li class="essb_item essb_link_twitter nolightbox"> <a href="http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows#" title="" onclick="essb_window(&#39;https://twitter.com/intent/tweet?text=H%C6%B0%E1%BB%9Bng+d%E1%BA%ABn+s%E1%BB%AD+d%E1%BB%A5ng+github+tr%C3%AAn+windows&amp;url=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;counturl=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&amp;related=hoangweb&amp;via=hoangweb&amp;hashtags=đào tạo lập trình, học thiết kế web&#39;,&#39;twitter&#39;,&#39;2110685098&#39;); return false;" target="_blank" rel="nofollow"><span class="essb_icon"></span><span class="essb_network_name">Twitter</span></a></li><li class="essb_item essb_link_google nolightbox"> <a href="https://plus.google.com/share?url=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows" title="" onclick="essb_window(&#39;https://plus.google.com/share?url=http://www.hoangweb.com/github/huong-dan-su-dung-github-tren-windows&#39;,&#39;google&#39;,&#39;2110685098&#39;); return false;" target="_blank" rel="nofollow"><span class="essb_icon"></span><span class="essb_network_name">Google+</span></a></li></ul></div></div></div><div class="essb-mobile-sharebar-window-shadow"></div><link rel="stylesheet" id="yarppRelatedCss-css" href="./Hướng dẫn sử dụng github trên windows_files/related.css" type="text/css" media="all">
+<link rel="stylesheet" id="rich-testimonial-title2-css" href="./Hướng dẫn sử dụng github trên windows_files/css(2)" type="text/css" media="all">
+<link rel="stylesheet" id="testimonial_simplist-css" href="./Hướng dẫn sử dụng github trên windows_files/style(1).css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"Hi\u1ec3n th\u1ecb","visibility_hide":"\u1ea8n","width":"Auto"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/front.min.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/wp-embed.min.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/testimonial.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.easing.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/jquery.touchwipe.js"></script>
+<script type="text/javascript" src="./Hướng dẫn sử dụng github trên windows_files/testimonialdim.js"></script>
+<style type="text/css"></style><script type="text/javascript">
+					(function() {
+					var po = document.createElement('script'); po.type = 'text/javascript'; po.async=true;;
+					po.src = 'http://www.hoangweb.com/wp-content/plugins/easy-social-share-buttons3/assets/js/easy-social-share-buttons.min.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					})(); 
+					(function() {
+					var po = document.createElement('script'); po.type = 'text/javascript'; po.async=true;;
+					po.src = 'http://www.hoangweb.com/wp-content/plugins/easy-social-share-buttons3/assets/js/essb-mobile.min.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					})();</script><script type="text/javascript">var essb_clicked_lovethis = false; var essb_love_you_message_thanks = "Thank you for loving this."; var essb_love_you_message_loved = "You already love this today."; var essb_lovethis = function(oInstance) { if (essb_clicked_lovethis) { alert(essb_love_you_message_loved); return; } var element = jQuery('.essb_'+oInstance); if (!element.length) { return; } var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var cookie_set = essb_get_lovecookie("essb_love_"+instance_post_id); if (cookie_set) { alert(essb_love_you_message_loved); return; } if (typeof(essb_settings) != "undefined") { jQuery.post(essb_settings.ajax_url, { 'action': 'essb_love_action', 'post_id': instance_post_id, 'service': 'love', 'nonce': essb_settings.essb3_nonce }, function (data) { if (data) { alert(essb_love_you_message_thanks); }},'json'); } essb_tracking_only('', 'love', oInstance, true); }; var essb_get_lovecookie = function(name) { var value = "; " + document.cookie; var parts = value.split("; " + name + "="); if (parts.length == 2) return parts.pop().split(";").shift(); }; var essb_window = function(oUrl, oService, oInstance) { var element = jQuery('.essb_'+oInstance); var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var instance_position = jQuery(element).attr("data-essb-position") || ""; var wnd; var w = 800 ; var h = 500; if (oService == "twitter") { w = 500; h= 300; } var left = (screen.width/2)-(w/2); var top = (screen.height/2)-(h/2); if (oService == "twitter") { wnd = window.open( oUrl, "essb_share_window", "height=300,width=500,resizable=1,scrollbars=yes,top="+top+",left="+left ); } else { wnd = window.open( oUrl, "essb_share_window", "height=500,width=800,resizable=1,scrollbars=yes,top="+top+",left="+left ); } if (typeof(essb_settings) != "undefined") { if (essb_settings.essb3_stats) { if (typeof(essb_handle_stats) != "undefined") { essb_handle_stats(oService, instance_post_id, oInstance); } } if (essb_settings.essb3_ga) { essb_ga_tracking(oService, oUrl, instance_position); } } essb_self_postcount(oService, instance_post_id); var pollTimer = window.setInterval(function() { if (wnd.closed !== false) { window.clearInterval(pollTimer); essb_smart_onclose_events(oService, instance_post_id); } }, 200); }; var essb_self_postcount = function(oService, oCountID) { if (typeof(essb_settings) != "undefined") { oCountID = String(oCountID); jQuery.post(essb_settings.ajax_url, { 'action': 'essb_self_postcount', 'post_id': oCountID, 'service': oService, 'nonce': essb_settings.essb3_nonce }, function (data) { if (data) { }},'json'); } }; var essb_smart_onclose_events = function(oService, oPostID) { if (typeof (essbasc_popup_show) == 'function') { essbasc_popup_show(); } if (typeof essb_acs_code == 'function') { essb_acs_code(oService, oPostID); } }; var essb_tracking_only = function(oUrl, oService, oInstance, oAfterShare) { var element = jQuery('.essb_'+oInstance); if (oUrl == "") { oUrl = document.URL; } var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var instance_position = jQuery(element).attr("data-essb-position") || ""; if (typeof(essb_settings) != "undefined") { if (essb_settings.essb3_stats) { if (typeof(essb_handle_stats) != "undefined") { essb_handle_stats(oService, instance_post_id, oInstance); } } if (essb_settings.essb3_ga) { essb_ga_tracking(oService, oUrl, instance_position); } } essb_self_postcount(oService, instance_post_id); if (oAfterShare) { essb_smart_onclose_events(oService, instance_post_id); } }; var essb_pinterest_picker = function(oInstance) { essb_tracking_only('', 'pinterest', oInstance); var e=document.createElement('script'); e.setAttribute('type','text/javascript'); e.setAttribute('charset','UTF-8'); e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e); };</script>
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+
+ Served from: hoangweb.com @ 2016-03-10 13:45:30 by W3 Total Cache --><iframe id="sbzstorage_frame" src="./Hướng dẫn sử dụng github trên windows_files/cross-storage.html" style="display: none; position: absolute; top: -999px; left: -999px;"></iframe><div class="sbzon" style="display: none; margin: 0px; padding: 0px; border: 0px; z-index: 16000001; position: fixed; bottom: 0px; overflow: hidden; right: 10px; width: 250px; height: 206px; background-color: rgba(0, 0, 0, 0);"><iframe id="sbzon_frame" name="sbzon" frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; margin: 0px; overflow: hidden;" src="javascript:false"></iframe></div><div class="sbzoff" style="display: block; margin: 0px; padding: 0px; border: 0px; z-index: 16000001; position: fixed; bottom: 0px; overflow: hidden; right: 10px; width: 333.563px; height: 56px; background-color: rgba(0, 0, 0, 0);"><iframe id="sbzoff_frame" name="sbzoff" frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; margin: 0px; overflow: hidden;" src="javascript:false"></iframe></div></body></html>

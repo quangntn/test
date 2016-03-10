@@ -1,0 +1,181 @@
+a[name="course-form"]{display:inline-block;/*height:40px;*/}
+
+.tab-contents a{
+    color: #fff !important;
+	border-bottom: 0px dotted #aaa !important;
+}
+.tab-contents a{
+    float:left;
+    padding: 4px 16px;
+    background: #da4f49;
+	height: 36px;
+}
+.tab-contents {
+	width: 100%;
+	max-width: 644px;
+	height: 36px;
+    background-color: rgb(218, 79, 73);
+    display: inline-block;
+    padding-top:10px;
+	z-index:10000;
+	margin:0 !important;
+	padding:0 !important;
+}
+.content-tab{
+    padding: 0;
+    margin: 0;
+}
+.current-tab a{
+    background: #3e433e !important;
+}
+ul.tab-contents li.current-tab:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #3e433e;
+    position: absolute;
+    top: 36px;
+    left: 35px;
+}
+.current-tab a{
+    color: #fff !important;
+	border-bottom: 0px dotted #aaa !important;
+}
+.fixed{position: fixed;background: red;color:#fff;left:0px;top:0px;}
+ul.tab-contents li{
+	list-style-type: none !important;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+}
+.current-tab li a.active:after {
+	position: absolute;
+    display: block;
+    content: '';
+    border-top: 6px solid #ed1c24;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    left: 30px;
+}
+.course-sidebar-fixed{
+	z-index:2;
+}
+.testimonial_wrapper{z-index:0;}
+
+.course-image .course-title{
+font-size: 26px;
+    max-width: 682px;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    padding: 0 13px;
+    margin-bottom: 4px;
+    color: #fff;
+    background: rgba( 30, 30, 30, 0.5 );
+    text-shadow: 0 1px 3px rgba( 0, 0, 0, 0.4 );
+    -webkit-box-shadow: 0 0 30px rgba( 255, 255, 255, 0.1 );
+    -moz-box-shadow: 0 0 30px rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 0 30px rgba( 255, 255, 255, 0.1 );
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.course-image{
+	position:relative;
+}
+/*contact form*/
+#responsive-form{
+	max-width:600px /*-- change this to get your desired form width --*/;
+	margin:0 auto;
+        width:100%;
+}
+.form-row{
+	width: 100%;
+}
+.column-half, .column-full{
+	float: left;
+	position: relative;
+	padding: 0.65rem;
+	width:100%;
+	-webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/**---------------- Media query ----------------**/
+@media only screen and (min-width: 48em) { 
+	.column-half{
+		width: 50%;
+	}
+}
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 2px 3px -1px #ced6db;
+	box-shadow: inset 0 2px 3px -1px #ced6db;
+}
+.wpcf7 input[type="text"]:focus{
+	background: #fff;
+}
+.wpcf7-submit{
+	float: right;
+	background: #CA0002;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	padding: 8px 20px;
+	cursor: pointer;
+}
+.wpcf7-submit:hover{
+	background: #ff0000;
+}
+span.wpcf7-not-valid-tip{
+	text-shadow: none;
+	font-size: 12px;
+	color: #fff;
+	background: #ff0000;
+	padding: 0px 10px;
+	position: absolute;
+    left: 10px;
+    bottom: -7px;
+	-webkit-border-bottom-right-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-bottomright: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+div.wpcf7-validation-errors { 
+	text-shadow: none;
+	border: transparent;
+	background: #f9cd00;
+	padding: 5px;
+	color: #9C6533;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+}
+div.wpcf7-mail-sent-ok{
+	text-align: center;
+	text-shadow: none;
+	padding: 5px;
+	font-size: 14px;
+	background: #47b64b;
+	border-color: #47b64b;
+	color: #fff;
+	margin: 0 20px;
+}
